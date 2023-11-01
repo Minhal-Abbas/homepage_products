@@ -22,11 +22,12 @@ body{
 }
 .header_head {
     color: white;
-    width: 50%;
-    font-size: 25px;
+    width: 30%;
+    font-size: 20px;
     /* margin-bottom: 20px; */
     text-shadow: 3px 3px green;
-    margin: 200px 0px 0 260px;
+    margin: 220px 0px 0 180px;
+    /* transform: translate(45%, 40%); */
 
     @media only screen and (max-width: 768px) {
         margin: 20px 0px 0px 0px;
@@ -48,20 +49,17 @@ h1{
 .div1{
     background-color: #008655;
     width: 100%;
-    height: 600px;
+    height: 650px;
     position: absolute;
     overflow: hidden;
     display: flex;
 }
 .heed{
     margin-left: 6%;
-    margin-top: 15px;
+    margin-top: 5%;
     color: #696969;
-    padding-bottom: 30px;
-    margin-bottom: 10px;
- }
- .header_head{
-     width: 40%;
+    padding-bottom: 2%;
+    /* margin-bottom: 10px; */
  }
 .form_switch{
     position:relative;
@@ -71,19 +69,31 @@ h1{
     position: relative;
     margin-top: 5%;
     margin-left: auto;
-    width: 25%;
+    width: 35%;
     padding: 40px 25px;
     background: #FFFFFF;
-    border-radius: 4px;
+    border-radius: 10px;
     box-shadow: 2px 2px 50px darkslategray;
-    margin-right: 15%;
+    margin-right: 10%;
 }
 .box_line{
     padding-bottom: 20px;
-    padding-left: 5%;
+    padding-left: 2%;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+.home img{
+    height: 40px;
+}
+.travel img{
+    height: 40px;
+}
+.health img{
+    height: 40px;
 }
 .home{
-    padding: 18px 28px;
+    padding: 14px 28px;
+    width: 50%;
     font-size: 20px;
     box-shadow: 2px 2px 10px lightgray;
     color: white;
@@ -91,42 +101,42 @@ h1{
     margin-bottom: 10px;
     border-radius: 10px;
     text-align: center;
-    margin-left: 4px;
+    margin: 4px;
     letter-spacing: 1px;
     cursor: pointer;
     transition: 0.3s ease;
 }
 .travel{
-    padding: 18px 28px;
+    width: 50%;
+    padding: 14px 28px;
     font-size: 20px;
     box-shadow: 2px 2px 10px lightgray;
     color: #898DA4;
-    /* background: linear-gradient(45deg, lightblue, lightgreen); */
     margin-bottom: 10px;
     border-radius: 10px;
     text-align: center;
-    margin-left: 4px;
+    margin: 4px;
     letter-spacing: 1px;
     cursor: pointer;
     transition: 0.3s ease;
 }
 .health{
-    padding: 18px 28px;
+    width: 50%;
+    padding: 14px 28px;
     font-size: 20px;
     box-shadow: 2px 2px 10px lightgray;
     color: #898DA4;
-    /* background: linear-gradient(45deg, lightblue, lightgreen); */
     margin-bottom: 10px;
     border-radius: 10px;
     text-align: center;
-    margin-left: 5px;
+    margin: 4px;
     letter-spacing: 1px;
     cursor: pointer;
     transition: 0.3s ease;
 }
 .reg_form .form_input{
     width: 100%;
-    margin-top: 40px;
+    margin-top: 15%;
     text-align: right;
     position: relative;
     overflow: hidden;
@@ -166,8 +176,8 @@ input::placeholder{
     font-size: 18px;
 }
 #btn{
-    padding: 7px;
-    font-size: 12px;
+    padding: 8px;
+    font-size: 14px;
     width: 35%;
     border: none;
     text-align: left;
@@ -182,73 +192,82 @@ input::placeholder{
 #btn:active{
     transform: scale(1.05);
 }
-.cover1{
-    width: 90vw;
-    height: auto;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    /* gap: 5px; */
-}
-.product1{
-    max-width: 30%;
-    height: 300px;
-    flex: 1 1 300px;
-}
-.product2{
-    max-width: 30%;
-    height: 300px;
-    flex: 1 1 300px;
-}
-.product1 p{
-    text-align: justify;
-    width: 78%;
-    color: #696969;
-    margin-bottom: 30px;
 
-}
-.product2 p{
-    text-align: justify;
-    width: 78%;
-    margin-bottom: 30px;
 
-}
-.cover2{
-    width: 90vw;
-    height: auto;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
+/* PRODUCTS GRID 1 */
 .bara1{
     margin-top: 6%;
     padding-top: 10px;
     height: auto;
+    width: 100%;
     flex-direction: column;
     position: relative;
     justify-items: center;
     letter-spacing: 1px;
 }
+.cover1{
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.product1{
+    flex: 1 1 300px;
+    padding: 0 3%;
+}
+.product1 p{
+    width: 100%;
+    color: #696969;
+    margin: 0;
+}
+.bara1 h1{
+    margin-left: 11%;
+    padding: 30px 0;
+}
 .bara1 h2{
     color: #696969;
+    margin-top: 5px;
 }
+
+/* PRODCUT GRID 2 */
 .bara2{
-    height: 600px;
+    height: 650px;
     background-color: #008655;
-    margin-top: 10%;
-    /* margin-bottom: 5%; */
-    padding-top: 10px;
+    margin-top: 6%;;
     flex-direction: column;
     position:relative;
+    letter-spacing: 1px;    
+    width: 100%;
     letter-spacing: 1px;
 }
+.cover2{
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.product2{
+    flex: 1 1 300px;
+    padding: 0 3%;
+}
+.product2 p{
+    width: 78%;
+    width: 100%;
+    margin: 0;
+}
+
 .bara2 h1, p{
     color: white;
+    margin-left: 11%;
+    padding: 30px 0;
 }
 .bara2 h2{
     color: #fff;
+    margin-top: 5px;
 }
 .read_btn{
     background: #0c52a0;
@@ -262,7 +281,7 @@ input::placeholder{
 }
 .bara1 .product1 img,
 .bara2 .product2 img {
-    width: 80%;
+    width: 100%;
     max-height: 100%;
     object-fit: cover;
 }
@@ -281,7 +300,7 @@ input::placeholder{
     position: absolute;
     padding: 10px;
     color: white;
-    margin: 10% 0% 0% 70%; 
+    margin: 12% 0% 0% 65%; 
     text-transform: uppercase;
     font-size: 35px;
 }
@@ -289,32 +308,35 @@ input::placeholder{
     position: absolute;
     padding: 10px;
     color: white;
-    margin: 12% 0 0 70%;
+    margin: 15% 0 0 65%;
     text-transform: uppercase;
-    font-size: 45px;
+    font-size: 40px;
 }
+
+
+/* SHARIAH COMPLIANCE SECTION  */
 .bio{
-    width: 60%;
+    width: 80%;
     padding: 10px;
-    margin-top: 27%;
-    margin-left: 20%;
-    text-align: justify;
-    box-sizing: border-box; /* Ensure padding is included in the width */
+    margin-top: 35%;
+    margin-left: 10%;
+    box-sizing: border-box; 
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    justify-content: space-between; /* Add space between the divs */
+    flex-wrap: wrap;
+    justify-content: space-between; 
     flex-direction: row;
 }
 .bio h1, h2, h3{
     color: #696969;
+
 }
 .bio p{
+    margin: 0;
     padding: 10px 0;
     color: #696969;
 }
 .bio h1{
     margin-bottom: 4%;
-    color: #696969;
 }
 .picture-div{
     flex: 0 0 40%;
@@ -331,18 +353,18 @@ input::placeholder{
     object-fit: cover;
 }
 .text-div h1 {
-    text-align: right; /* Align the name heading to the right */
+    text-align: right;
 }
 .links {
     display: flex;
-    justify-content: space-between; /* Align items in a horizontal line */
-    margin-top: 20px; /* Add space between text and buttons */
+    justify-content: space-between; 
+    margin-top: 20px; 
     width: 700px;
 }
 .border{
     border-bottom: 2px solid #bbb;
     padding-bottom: 10px;
-    
+    font-size: 22px;
 }
 .links a,
 .links button {
@@ -352,19 +374,21 @@ input::placeholder{
     color: white;
     border: none;
     border-radius: 4px;
-    /* padding: 5px 10px; */
-    /* margin-left: 10px; */
     cursor: pointer;
 }
 .details{
-    padding: 10px;
+    margin-left: 10px;
+    letter-spacing: 1px;
 }
-.newsletter {
+
+
+/* NEWLETTER SECTION */
+/* .newsletter {
     position: relative;
     width: 100%;
     height: 400px;
     overflow: hidden;
-    margin-top: 20px; /* Add space between the "bio" and "newsletter" sections */
+    margin-top: 20px;
 }
 
 .newsletter .img1 {
@@ -417,7 +441,7 @@ input::placeholder{
     text-align: center;
     background-color: #008655;
     color: white;
-}
+} */
 
 @media  screen and (max-width: 768px) {
     .header_head, .reg_form {
@@ -431,16 +455,19 @@ input::placeholder{
 
 
     .bara1 {
-        margin-bottom: 20px;
-        margin-top: 17%;
-        height: 1350px;
+        height: 1600px;
+    }
+    .bara1 p{
+        padding: 0;
+        margin-bottom: 5px;
+    }
+    .bara2 p{
+        padding: 0;
+        margin-bottom: 5px;
     }
     .bara2 {
         clear: both; 
-        /* margin-bottom: 20px; */
-        margin-top: 10%;
-        padding-bottom: 20px;
-        height: 1370px;
+        height: 1600px;
     }
     .product1 h2{
         font-size: 20px;
@@ -450,22 +477,35 @@ input::placeholder{
         font-size: 20px;
         margin: 5px 0px;
     }
+    .bara1 h1{
+        font-size: 30px;
+        margin: 0 0 -50px 0px;
+    }
+    .bara2 h1{
+        font-size: 30px;
+        margin: 0 0 -50px 0px;
+    }
     .product2, .product1{
         max-width: 100%;
         justify-content: center;
         align-items: center;
         display: flex;
         flex-direction: column;
-        height: 420px;
+        height: 500px;
     }
-    .cover2{
+    .cover1, .cover2{
         justify-content: center;
         align-items: center;
+        width: 90%;
     }
 
     .img1{
         height: 220px;
     }
+
+
+
+
     .bridge_text1 {
         font-size: 14px; 
         margin: 26% 0 0 55%; 
@@ -476,6 +516,8 @@ input::placeholder{
         margin: 32% 0 0 55%; 
     }
     
+
+
     .picture-div,
     .text-div {
         flex: 0 0 100%; 
@@ -486,13 +528,17 @@ input::placeholder{
         margin-bottom: 15px;
         /* margin-top: 8%; */
     }
+
+
     .header_head {
         margin: 20px 0 0 0;
     }
+
+    
     .shariah{
         font-size: 30px;
         text-align: center;
-        margin-top: 90%;
+        margin-top: 50%;
     }
     .intro{
         margin-top: 5%;
@@ -507,35 +553,34 @@ input::placeholder{
         
     } */
     .profile-pic {
-        width: 200px;
-        height: 200px;
-        margin-left: -30%;
+        /* width: 200px;
+        height: 200px; */
         object-fit: cover;
     }
     .details {
-        width: 250px;
+        width: 100%;
         text-align: center;
-        margin-left: -30%;
     }
     .links{
-        text-align: left;
+        text-align: center;
         flex-direction: column;
     }
     .links button{
-        width: 120px;
+        width: 100%;
+        text-align: center;
         padding: 10px;
     }
     .border{
-        width: 90%;
+        width: 100%;
     }
 
 
-    .newsletter {
+    /* .newsletter {
         height: auto;
     }
     /* .newsletter .img1 {
         height: 200px;
-    } */
+    }
     .newsletter .content {
         top: 50%;
         transform: translate(-70%, -50%);
@@ -559,7 +604,7 @@ input::placeholder{
     }
     .email-form input::placeholder{
         font-size: 12px;
-    }
+    } */
 }
 
 
