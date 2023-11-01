@@ -9,7 +9,8 @@ function showAlert(){
   alert ("Hello world!");
 }
 
-function tab1(){
+home.addEventListener("click",()=>{
+
     form.style.marginLeft = "0";
     health.style.background = "none" 
     travel.style.background = "none";
@@ -18,7 +19,9 @@ function tab1(){
     travel.style.color = "#898DA4";
     home.style.color = "white";
     health.style.color = "#898DA4";
-}
+    })
+
+
 
 function tab2(){
     form.style.marginLeft = "-100%";
