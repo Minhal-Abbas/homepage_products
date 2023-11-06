@@ -12,7 +12,7 @@
 body{
     min-height: 100vh;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: white;
     align-items: center;
     justify-content: center;
 }
@@ -106,6 +106,9 @@ h1{
     cursor: pointer;
     transition: 0.3s ease;
 }
+/* .home .btnImg{
+    filter: brightness(0) invert(1);
+} */
 .travel{
     width: 50%;
     padding: 14px 28px;
@@ -119,7 +122,11 @@ h1{
     letter-spacing: 1px;
     cursor: pointer;
     transition: 0.3s ease;
+    filter: none;
 }
+.active {  filter: brightness(0) invert(1);  }
+
+
 .health{
     width: 50%;
     padding: 14px 28px;
