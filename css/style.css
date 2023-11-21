@@ -3,11 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.second{
+    display: flex;}
+    
 .flexClass{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.col{
+    flex-direction: column;
+    flex:1;
 }
 body{
     min-height: 100vh;
@@ -19,6 +25,11 @@ body{
 .header{
     display: flex;
     flex-wrap: wrap;
+    background-color: #008655;
+    padding-bottom: 20px;
+    width: 100%;
+    /* height: 50vh; */
+    overflow: hidden;
 }
 .header_head {
     color: white;
@@ -46,30 +57,24 @@ h1{
     display: flex;
     object-fit: cover;
 }
-.div1{
-    background-color: #008655;
-    width: 100%;
-    height: 650px;
-    position: absolute;
-    overflow: hidden;
-    display: flex;
-}
 .heed{
     margin-left: 6%;
-    margin-top: 5%;
+    margin-top: 3%;
     color: #696969;
     padding-bottom: 2%;
     /* margin-bottom: 10px; */
  }
 .form_switch{
+    justify-content: flex-start !important;
     position:relative;
     border-bottom: 1px solid white;
 }
 .reg_form{
+   
     position: relative;
     margin-top: 5%;
     margin-left: auto;
-    width: 35%;
+    width: 25%;
     padding: 40px 25px;
     background: #FFFFFF;
     border-radius: 10px;
@@ -82,6 +87,7 @@ h1{
     font-size: 15px;
     letter-spacing: 3px;
 }
+
 .home img{
     height: 40px;
 }
@@ -203,9 +209,7 @@ input::placeholder{
 
 /* PRODUCTS GRID 1 */
 .bara1{
-    margin-top: 6%;
     padding-top: 10px;
-    height: auto;
     width: 100%;
     flex-direction: column;
     position: relative;
@@ -213,12 +217,12 @@ input::placeholder{
     letter-spacing: 1px;
 }
 .cover1{
-    height: auto;
     margin: auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 70%;
+    padding-bottom: 20px;
 }
 .product1{
     flex: 1 1 300px;
@@ -230,8 +234,8 @@ input::placeholder{
     margin: 0;
 }
 .bara1 h1{
-    margin-left: 11%;
-    padding: 30px 0;
+    margin-left: 11.6%;
+ 
 }
 .bara1 h2{
     color: #696969;
@@ -240,22 +244,24 @@ input::placeholder{
 
 /* PRODCUT GRID 2 */
 .bara2{
-    height: 600px;
+    
     background-color: #008655;
-    margin-top: 6%;;
+    /* margin-top: 6%;; */
     flex-direction: column;
     position:relative;
     letter-spacing: 1px;    
     width: 100%;
     letter-spacing: 1px;
+    /* padding-top: 1px; */
+    /* padding: 10px; */
 }
 .cover2{
-    height: auto;
     margin: auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 70%;
+    padding-bottom: 80px;
 }
 .product2{
     flex: 1 1 300px;
@@ -266,10 +272,11 @@ input::placeholder{
     width: 100%;
     margin: 0;
 }
-
+.bara2 .heed{
+    padding-top: 50px;}
 .bara2 h1, p{
     color: white;
-    margin-left: 11%;
+    margin-left: 11.6%;
     padding: 20px 0;
 }
 .bara2 h2{
@@ -299,23 +306,41 @@ input::placeholder{
     /* background-color: #008655; */
     width: 100%;
     height: 450px;
-    position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
     overflow: hidden;
     display: flex;
+    background-image: url(../images/bridge.jpg);
+    background-position: center;
+    background-size: cover;
+    /* flex-direction: column; */
+    position: relative;
+   
+
+}
+.bridge_text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  justify-content: flex-end; 
+  margin-right: 50px;
+ 
+}
+.bridge_text div{
+    flex-direction: column;
 }
 .bridge_text1{
-    position: absolute;
-    padding: 10px;
+
+
     color: white;
-    margin: 12% 0% 0% 65%; 
+  
     text-transform: uppercase;
     font-size: 35px;
 }
 .bridge_text2{
-    position: absolute;
-    padding: 10px;
+
     color: white;
-    margin: 15% 0 0 65%;
     text-transform: uppercase;
     font-size: 40px;
 }
@@ -325,13 +350,15 @@ input::placeholder{
 .bio{
     width: 80%;
     padding: 10px;
-    margin-top: 35%;
-    margin-left: 10%;
-    box-sizing: border-box; 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    flex-direction: row;
+    margin-top: 5%;
+    margin-left: 12%;
+    margin-bottom: 5%;
+    align-items: flex-start;
+    justify-content: center;
+flex-direction: column;
+
+
+
 }
 .bio h1, h2, h3, h4{
     color: #696969;
@@ -343,7 +370,7 @@ input::placeholder{
     color: #696969;
 }
 .bio h1{
-    margin-bottom: 4%;
+    margin-bottom: 2%;
 }
 .picture-div{
     flex: 0 0 40%;
@@ -357,10 +384,14 @@ input::placeholder{
 .profile-pic {
     width: 200px;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
 }
 .text-div h1 {
     text-align: right;
+}
+.bio_btns{
+    flex-direction: column;
+    /* margin-top: 50px; */
 }
 .links {
     display: flex;
@@ -370,115 +401,126 @@ input::placeholder{
 }
 .border{
     border-bottom: 2px solid #bbb;
-    /* padding-bottom: 5px; */
     font-size: 18px;
 }
 .links a,
 .links button {
     flex: 0 0 20%;
-    /* text-align: center; */
-    background-color: #008655;
+    /* background-color: #008655; */
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 .details{
-    margin-left: 10px;
+    /* margin-left: 10px; */
     letter-spacing: 1px;
-    height: 200px;
+    width: 80%;
 }
 .download_btn{
     height: 30px;
     margin-top: 5px;
-}
-
-/* NEWLETTER SECTION */
-/* .newsletter {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-.newsletter .img1 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.newsletter .content {
-    position: absolute;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-}
-
-.newsletter h1{
-    font-size: 40px;
-    color: #0C52A0;
-    margin-bottom: 10px;
-}
-.newsletter h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: left;
-    color: #0C52A0;
-}
-.email-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.email-form input {
-    width: 300px;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-}
-.email-form input::placeholder{
-    font-size: 14px;
-}
-.email-form button {
-    border: none;
-    border-radius: 5px;
-    padding: 8px 16px;
-    margin-left: 10px;
-    cursor: pointer;
-    flex: 0 0 33%;
-    text-align: center;
     background-color: #008655;
-    color: white;
-} */
+}
 
-@media  screen and (max-width: 768px) {
-    .header_head, .reg_form {
-        width: 90%; 
-        margin-right: 0;;
-        margin-left: 5%;
+.profile-pic{
+        
+  object-fit: contain;
+  border: 2px solid rgba(128, 128, 128, 0.288);
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+@media screen and (width >= 1024px) {
+
+    .home, .health, .travel{
+        width: 25%;
+    }
+
+}
+
+@media  screen and (max-width: 1024px) {
+    .product1 , .product2{
+       flex: unset;
+       padding: 20px 0;
+       margin: 20px 0;
+    }
+    .bara2{
+        margin-top:85px;
+    }
+
+    .shariah{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .second{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    p , h1{
+        text-align: center;
+    }
+  
+    .form_switch{
+        font-size: 15px !important;
+    }
+    .heed{
+        width: 100%;
+        margin: 0 ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header{    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header_head {
+        width: 100%; 
+        margin: 0;
+        padding: 0;
+        & h1{
+            justify-content: center;
+            align-items: center;
+        }
+       
+    }
+    .box_line{
+        text-align: center;
+    }
+   .reg_form {
+        width: 100%; 
+        margin: 0;
+        margin: 20px 100px;
+        
+    }
+    .header_head{
+        width: 100%;
     }
     .home, .health, .travel{
         padding: 4px 14px;
+        /* width: 20%; */
     }
 
 
     .bara1 {
-        height: 1600px;
+        height: 1400px;
+        /* background-color: wheat; */
     }
     .bara1 p{
         padding: 0;
         margin-bottom: 5px;
     }
+    .bara2 {
+        clear: both; 
+        /* height: 1400px; */
+    }
     .bara2 p{
         padding: 0;
         margin-bottom: 5px;
-    }
-    .bara2 {
-        clear: both; 
-        height: 1600px;
     }
     .product1 h2{
         font-size: 20px;
@@ -490,11 +532,13 @@ input::placeholder{
     }
     .bara1 h1{
         font-size: 30px;
-        margin: 0 0 -50px 0px;
+        /* margin: 0 0 -50px 0px; */
+        margin: 0 auto;
     }
     .bara2 h1{
         font-size: 30px;
-        margin: 0 0 -50px 0px;
+        /* margin: 0 0 -50px 0px; */
+        margin: 0 auto;
     }
     .product2, .product1{
         max-width: 100%;
@@ -502,7 +546,17 @@ input::placeholder{
         align-items: center;
         display: flex;
         flex-direction: column;
-        height: 500px;
+        height: 420px;
+    }
+    .bara1 .product1 img, .bara2 .product2 img{
+        width: unset;
+    }
+    .read_btn{
+        padding: 10px 27px;
+        text-align: center;
+    }
+    .cover1 img , .cover2 img{
+        padding: 10px 0;
     }
     .cover1, .cover2{
         justify-content: center;
@@ -515,16 +569,16 @@ input::placeholder{
     }
 
 
-
-
+    .div2{  
+        position: relative;
+    }
     .bridge_text1 {
         font-size: 14px; 
-        margin: 26% 0 0 55%; 
+ 
     }
-
     .bridge_text2 {
         font-size: 18px;
-        margin: 32% 0 0 55%; 
+     
     }
     
 
@@ -545,32 +599,43 @@ input::placeholder{
         margin: 20px 0 0 0;
     }
 
-    
+
+
+    .bio{
+        margin: 0 auto;
+       display: block;
+       position: relative;
+    }
     .shariah{
-        font-size: 30px;
-        text-align: center;
-        margin-top: 50%;
+        font-size: 26px;
+        margin: 0 auto;
     }
     .intro{
-        margin-top: 5%;
+        /* margin-top: 5%; */
+        width: 100%;
+        height: 100vh;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
-    /* .bio p{
-        width: 200px;
-        justify-content: center;
-        align-items: center;
-        
-    } */
     .profile-pic {
-        /* width: 200px;
-        height: 200px; */
-        object-fit: cover;
+
+        object-fit: contain;
     }
     .details {
         width: 100%;
         text-align: center;
+    }
+    .details h3{
+        font-size: 22px;
+        margin: 10px;
+    }
+    .bio_btns{
+        /* margin-top: 350px; */
+
+        position: relative;
+
+        /* top: 0; */
     }
     .links{
         text-align: center;
@@ -585,6 +650,21 @@ input::placeholder{
         width: 100%;
     }
 
+    .bara2 h1, p {
+        padding: unset;
+    }
+.bara1 .heed{
+    padding-top: 30px;
+}
+.cover2{
+    padding-bottom: 50px;
+}
+.div2{
+    height: 250px;
+}
+/* .bridge_text1,.bridge_text2{
+    margin:unset;
+} */
 
     /* .newsletter {
         height: auto;
